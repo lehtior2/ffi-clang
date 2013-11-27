@@ -85,6 +85,7 @@ module FFI
 				:cursor_first_expr, 100,
 				:cursor_decl_ref_expr, 101,
 				:cursor_member_ref_expr, 102,
+                :cursor_call_expr, 103,
 				:cursor_integer_literal, 106,
 				:cursor_unary_operator, 112,
 				:cursor_compound_stmt, 202,

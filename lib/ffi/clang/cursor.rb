@@ -58,8 +58,7 @@ module FFI
 			def expression?
 				Lib.is_expression(kind) != 0
 			end
-
-			def statement?
+def statement?
 				Lib.is_statement(kind) != 0
 			end
 
@@ -113,7 +112,7 @@ module FFI
 
             # Return the cursor that is referenced by this cursor, or if not a reference, then return nil
             def referenced
-                self.reference? ? Lib.get_cursor_referenced(@cursor) : nil
+                self.reference? ? Cursor.new(Lib.get_cursor_referenced(@cursor)) : nil
             end
 
 			def kind
