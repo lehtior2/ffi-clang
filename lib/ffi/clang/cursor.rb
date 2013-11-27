@@ -111,6 +111,11 @@ module FFI
 				Lib.extract_string Lib.get_cursor_spelling(@cursor)
 			end
 
+            # Return the cursor that is referenced by this cursor, or if not a reference, then return nil
+            def referenced
+                self.reference? ? Lib.get_cursor_referenced(@cursor) : nil
+            end
+
 			def kind
 				@cursor[:kind]
 			end
