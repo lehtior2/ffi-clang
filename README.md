@@ -2,8 +2,7 @@
 
 A light weight wrapper for Ruby exposing libclang.
 
-[![Build Status](https://secure.travis-ci.org/ioquatix/ffi-clang.png)](http://travis-ci.org/ioquatix/ffi-clang)
-[![Code Climate](https://codeclimate.com/github/ioquatix/ffi-clang.png)](https://codeclimate.com/github/ioquatix/ffi-clang)
+Forked to allow me to add missing functionality.
 
 ## Installation
 
