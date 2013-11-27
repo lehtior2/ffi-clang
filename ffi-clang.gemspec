@@ -6,8 +6,8 @@ require 'ffi/clang/version'
 Gem::Specification.new do |spec|
 	spec.name          = "ffi-clang"
 	spec.version       = FFI::Clang::VERSION
-	spec.authors       = ["Jari Bakken", "Samuel Williams"]
-	spec.email         = ["Jari Bakken", "samuel.williams@oriontransfer.co.nz"]
+	spec.authors       = ["Jari Bakken", "Samuel Williams", "Artturi Lehtiö"]
+	spec.email         = ["Jari Bakken", "samuel.williams@oriontransfer.co.nz", "artturi.lehtio@aalto.fi"]
 	spec.description   = %q{Ruby FFI bindings for libclang C interface.}
 	spec.summary       = %q{Ruby FFI bindings for libclang C interface.}
 	spec.homepage      = ""
