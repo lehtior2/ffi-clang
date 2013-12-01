@@ -43,6 +43,14 @@ module FFI
 				TranslationUnit.new translation_unit_pointer
 			end
 
+            def create_translation_unit(ast_filename)
+                translation_unit_pointer = Lib.create_translation_unit(self, ast_filename)
+
+                raise Error, "error parsing #{ast_filename.inspect}" unless translation_unit_pointer
+
+                TranslationUnit.new translation_unit_pointer
+            end
+
 			private
 
 			def args_pointer_from(command_line_args)
